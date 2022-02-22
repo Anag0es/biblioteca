@@ -18,4 +18,10 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function a_rota_Cadastrarlivros_esta_implementada(){
+        $response = $this ->get('/cadastrarlivro');
+
+        $response ->assertStatus(200);
+    }
 }
