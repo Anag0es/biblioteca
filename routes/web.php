@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\livro;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,13 @@ Route::get('/consultacervo', function(){
 
 Route::get('/realizaemprestimo', function(){
     return view('realizaemprestimo');
+});
+
+Route::get('/cadastrarlivro', function(){
+    $livrJava = new livro();
+    $livrJava -> titulo = "Programacao Java";    
+    $livrJava -> isbn = "12345";
+    $livrJava -> genero = "Tecnologia";
+    $livrJava->save();
+    return $livro::all();
 });
