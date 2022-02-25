@@ -27,10 +27,10 @@ Route::get('/realizaemprestimo', function(){
 });
 
 Route::get('/cadastrarlivro', function(){
-    $livrJava = new livro();
-    $livrJava -> titulo = "Programacao Java";    
-    $livrJava -> isbn = "12345";
-    $livrJava -> genero = "Tecnologia";
-    $livrJava->save();
-    return $livro::all();
+    $livr = new livro();
+    $livr > 'titulo' = "Programacao Java";    
+    $livr > 'isbn' = "12345";
+    $livr > 'genero' = "Tecnologia";
+    $livr >save();
+    return $livr::all();
 });
