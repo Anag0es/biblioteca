@@ -28,9 +28,9 @@ Route::get('/realizaemprestimo', function(){
 
 Route::get('/cadastrarlivro', function(){
     $livr = new livro();
-    $livr > 'titulo' = "Programacao Java";    
-    $livr > 'isbn' = "12345";
-    $livr > 'genero' = "Tecnologia";
+    $livr->titulo = "Programacao Java";    
+    $livr->isbn = "12345";
+    $livr->genero = "Tecnologia";
     $livr >save();
     return $livr::all();
 });
