@@ -31,6 +31,6 @@ Route::get('/cadastrarlivro', function(){
     $livr->titulo = "Programacao Java";    
     $livr->isbn = "12345";
     $livr->genero = "Tecnologia";
-    $livr >save();
+    $livr->save();
     return $livr::all();
 });
