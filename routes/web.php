@@ -26,6 +26,7 @@ Route::get('/realizaemprestimo', function(){
     return view('realizaemprestimo');
 });
 
+
 Route::get('/cadastrarlivro', function(){
     $livr = new livro();
     $livr->titulo = "Programacao Java";    

@@ -21,10 +21,12 @@
         </style>
     </head>
     <body class="antialiased">
-       <h1>Consultar Acervo</h1>
+       <h1>Cadastrar Livro</h1>
        <p><p>
        <a href="/realizaemprestimo">Realiza Empréstimo</a>
        <p><p>
            <a href="/">Home</a>
+           <br><br>
+           <a href="/consultacervo">Consultar Acervo</a>
     </body>
 </html>

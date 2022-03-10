@@ -26,5 +26,7 @@
        <a href="/realizaemprestimo">Realiza Empréstimo</a>
        <p><p>
            <a href="/">Home</a>
+        <br><br>
+        <a href="/cadastrarlivro">Cadastrar Livro</a>
     </body>
 </html>

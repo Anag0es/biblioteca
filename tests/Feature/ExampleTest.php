@@ -24,4 +24,16 @@ class ExampleTest extends TestCase
 
         $response ->assertStatus(200);
     }
+    
+    public function a_rota_Consultacervo_esta_implementada(){
+        $response = $this ->get('/consultacervo');
+
+        $response ->assertStatus(200);
+    }
+
+    public function a_rota_Realizaemprestimo_esta_implementada(){
+        $response = $this ->get('/realizaemprestimo');
+
+        $response ->assertStatus(200);
+    }
 }
