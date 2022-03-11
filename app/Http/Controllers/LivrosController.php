@@ -24,6 +24,6 @@ class LivrosController extends Controller
         $l->isbn = $dadosvalidados['isbn'];
         $l->genero = $dadosvalidados['genero'];
         $l->save();
-        return redirect()->back()->with('sucess!!');
+        return redirect()->back()->with('sucess!!', 'Livro cadastrado');
     }
 }
