@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\livro;
+use App\Http\Models\LivroController; //extend variavel
 
 /*
 |--------------------------------------------------------------------------
@@ -27,11 +28,13 @@ Route::get('/realizaemprestimo', function(){
 });
 
 
-Route::get('/cadastrarlivro', function(){
-    $livr = new livro();
-    $livr->titulo = "Programacao Java";    
-    $livr->isbn = "12345";
-    $livr->genero = "Tecnologia";
-    $livr->save();
-    return $livr::all();
-});
+//Route::get('/cadastrarlivro', function(){
+//    $livr = new livro();
+//    $livr->titulo = "Programacao Java";    
+//    $livr->isbn = "12345";
+//    $livr->genero = "Tecnologia";
+//    $livr->save();
+//    return $livr::all();
+//});
+
+Route::get('/cadastrarlivro',[LivroController::class, 'cadastrar_livro']);
