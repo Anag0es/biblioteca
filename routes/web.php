@@ -37,5 +37,5 @@ Route::get('/realizaemprestimo', function(){
 //    return $livr::all();
 //});
 
-Route::get('/cadastrarlivro',[LivroController::class, 'cadastrar_livro']);
+Route::get('/cadastrarlivro',[LivrosController::class, 'cadastrar_livro']);
 Route::post('/cadastrarlivro_store', [LivroController::class, 'cadastrar_livro_store']);

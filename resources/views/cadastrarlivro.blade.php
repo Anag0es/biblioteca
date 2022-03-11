@@ -23,9 +23,16 @@
     <body class="antialiased">
        <h1>Cadastrar Livro</h1>
        <br><br>
-       <form method="post">
-           <label for="titulo_livro"> Titulo</label><br>
-           <input id="titulo_livro"></input>
+       <form method="post" action="cadastrar_livro_store">
+           <label for="titulo_livro" > Titulo</label><br>
+           <input id="titulo_livro" name="titulo_livro"></input>
+           <br><br>
+           <label for="isbn">ISBN</label><br>
+           <input id="isbn" name="isbn"></input>
+           <br><br>
+           <label for="genero">Genero</label><br>
+           <input id="genero" name="genero"></input>
+           <br><br>
            <button type="submit">Enviar</button>
         </form>
        <br><br>

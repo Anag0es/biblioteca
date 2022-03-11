@@ -11,13 +11,19 @@ class LivrosController extends Controller
     }
 
     public function cadastrar_livro_store(Request $req){
-        $req->validate([
-            "titulo_livro" => 'required'
+        
+        $dadosvalidados = $req->validate([
+            'titulo_livro' => 'required',
+            'isbn' => 'required',
+            'genero' => 'required',
         ]);
 
-        $livr = new livro();
-            $livr->titulo = $dadosvalidados['titulo_livro'];  
-            $livr->save();
-            return $livr::all();
+
+        $l = new livro();
+        $l->titulo = $dadosvalidados['titulo_livro'];
+        $l->isbn = $dadosvalidados['isbn'];
+        $l->genero = $dadosvalidados['genero'];
+        $l->save();
+        return redirect()->back()->with('sucess!!');
     }
 }
