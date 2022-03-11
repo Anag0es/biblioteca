@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\livro;
-use App\Http\Controllers; //extend variavel
+use App\Http\Controllers\LivrosController; //extend variavel
 
 /*
 |--------------------------------------------------------------------------
