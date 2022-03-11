@@ -26,6 +26,7 @@
        <form method="post">
            <label for="titulo_livro"> Titulo</label><br>
            <input id="titulo_livro"></input>
+           <button type="submit">Enviar</button>
         </form>
        <br><br>
        <p><p>
