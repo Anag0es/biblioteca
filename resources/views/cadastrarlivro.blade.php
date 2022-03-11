@@ -22,6 +22,12 @@
     </head>
     <body class="antialiased">
        <h1>Cadastrar Livro</h1>
+       <br><br>
+       <form method="post">
+           <label for="titulo_livro"> Titulo</label><br>
+           <input id="titulo_livro"></input>
+        </form>
+       <br><br>
        <p><p>
        <a href="/realizaemprestimo">Realiza Empréstimo</a>
        <p><p>

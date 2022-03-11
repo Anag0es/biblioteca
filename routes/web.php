@@ -38,3 +38,4 @@ Route::get('/realizaemprestimo', function(){
 //});
 
 Route::get('/cadastrarlivro',[LivroController::class, 'cadastrar_livro']);
+Route::post('/cadastrarlivro_store', [LivroController::class, 'cadastrar_livro_store']);
